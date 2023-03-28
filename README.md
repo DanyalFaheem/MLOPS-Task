@@ -3,5 +3,5 @@
 # Reddit Sentiment Analysis
 
 # Danyal Faheem
-pull req
+pull request
 
