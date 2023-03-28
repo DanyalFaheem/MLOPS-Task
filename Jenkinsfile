@@ -6,7 +6,7 @@ pipeline {
     stages {
     stage('Build') {
         steps {
-        sh 'sudo docker build -t sentimentanalysis:latest .'
+        sh 'docker build -t sentimentanalysis:latest .'
         }
     }
     stage('Login') {
