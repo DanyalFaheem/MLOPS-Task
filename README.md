@@ -2,6 +2,4 @@
 
 # Reddit Sentiment Analysis
 
-# Danyal Faheem
-# pull request
 
