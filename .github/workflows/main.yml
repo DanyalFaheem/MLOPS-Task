@@ -36,7 +36,9 @@ jobs:
         make lint
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
+  
   build-push:
+    if: github.event.push == true
     runs-on: ubuntu-latest
 
     steps:
@@ -59,5 +61,5 @@ jobs:
     - name: Linting
       run: |
         make lint
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
+ #   - name: Create Pull Request
+ #     uses: peter-evans/create-pull-request@v4
