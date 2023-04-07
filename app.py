@@ -43,7 +43,7 @@ def index():
 
     while True:
         time.sleep(10)
-        for comment in reddit.subreddit("all").stream.comments(skip_existing=True):
+        for comment in reddit.subreddit("worldnews").stream.comments(skip_existing=True):
             prediction = predict_sentiment(comment)
             data.append(
                 {
